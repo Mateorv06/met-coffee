@@ -1,0 +1,8 @@
+target/
+*.class
+.idea/
+*.log
+uploads/
+.env
+.mongo-rs0-data/
+.mongo-rs0-log/

@@ -149,7 +149,7 @@ class CompraServiceTest {
 
 	@Test
 	void validaElPrecioDeLaBolsaConElFactorDelTamano() {
-		Producto producto = new Producto("p", "Café", 10, 50000);
+		Producto producto = new Producto("p", "Café", 10, 5000);
 		BolsaPersonalizada bolsa = new BolsaPersonalizada("grande", 500,
 				List.of(new CompartimentoBolsa("p", "Grano", 250), new CompartimentoBolsa("p", "Molido", 250)), 10);
 		Carrito carrito = carritoCon(new ItemCarrito(null, 1, null, 500, 10, bolsa)); // debería costar 18

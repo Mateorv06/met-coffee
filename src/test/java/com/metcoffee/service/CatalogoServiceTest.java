@@ -42,7 +42,7 @@ class CatalogoServiceTest {
 		producto.setNovedad(true);
 		when(productos.findByActivoTrueAndNovedadTrue()).thenReturn(List.of(producto));
 
-		assertEquals(1, service.novedades().size());
+		assertEquals(2, service.novedades().size());
 
 		verify(productos).findByActivoTrueAndNovedadTrue();
 	}

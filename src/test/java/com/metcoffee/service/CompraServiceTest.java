@@ -151,7 +151,7 @@ class CompraServiceTest {
 	void validaElPrecioDeLaBolsaConElFactorDelTamano() {
 		Producto producto = new Producto("p", "Café", 10, 5000);
 		BolsaPersonalizada bolsa = new BolsaPersonalizada("grande", 500,
-				List.of(new CompartimentoBolsa("p", "Grano", 250), new CompartimentoBolsa("p", "Molido", 250)), 10);
+				List.of(new CompartimentoBolsa("p", "Grano", 250), new CompartimentoBolsa("p", "Molido", 251)), 10);
 		Carrito carrito = carritoCon(new ItemCarrito(null, 1, null, 500, 10, bolsa)); // debería costar 18
 		when(carritos.findByUsuarioId("u")).thenReturn(Optional.of(carrito));
 		when(direcciones.findByIdAndUsuarioId("d", "u")).thenReturn(Optional.of(direccion));
